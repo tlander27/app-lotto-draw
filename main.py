@@ -9,11 +9,11 @@ def get_numbers(game):
     """
     draws = []
     if game == "Powerball":
-        numbers = list(range(1, 66))
+        numbers = list(range(1, 70))
         local_ball = Random().randrange(1, 27)
     else:
-        numbers = list(range(1, 65))
-        local_ball = Random().randrange(1, 27)
+        numbers = list(range(1, 71))
+        local_ball = Random().randrange(1, 26)
 
     for i in range(5):
         draw = Random().choice(numbers)
